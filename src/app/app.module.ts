@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { AdderComponent } from './components/adder/adder.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -14,6 +15,7 @@ import { AdderComponent } from './components/adder/adder.component';
     HelloComponent,
     CounterComponent,
     AdderComponent,
+    HeaderComponent,
   ],
   bootstrap: [AppComponent],
 })
