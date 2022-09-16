@@ -1,0 +1,19 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-adder',
+  templateUrl: './adder.component.html',
+  styleUrls: ['./adder.component.css'],
+})
+export class AdderComponent implements OnInit {
+  @Input() n1: string; //@Input só aceita strings
+  @Input() n2: string;
+
+  constructor() {}
+
+  ngOnInit() {}
+
+  getSum() {
+    return Number(this.n1) + Number(this.n2);
+  }
+}
