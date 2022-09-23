@@ -12,6 +12,7 @@ import { AnaTimerComponent } from './components/tarefa/ana-timer/ana-timer.compo
 import { AnaSimpleInterestsComponent } from './components/tarefa/ana-simple-interests/ana-simple-interests.component';
 import { AnaCompoundInterestsComponent } from './components/tarefa/ana-compound-interests/ana-compound-interests.component';
 import { AnaRandomNumbersComponent } from './components/tarefa/ana-random-numbers/ana-random-numbers.component';
+import { RevisaoComponent } from './components/tarefa/revisao/revisao.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -26,6 +27,7 @@ import { AnaRandomNumbersComponent } from './components/tarefa/ana-random-number
     AnaSimpleInterestsComponent,
     AnaCompoundInterestsComponent,
     AnaRandomNumbersComponent,
+    RevisaoComponent,
   ],
   bootstrap: [AppComponent],
 })
