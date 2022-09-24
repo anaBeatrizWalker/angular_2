@@ -1,0 +1,45 @@
+<div>
+  <div class="card text-center" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title">Cálculo de Amortização</h5>
+      <input
+        class="card-text"
+        placeholder="Valor Financiado"
+        [(ngModel)]="valor_financiado"
+        type="number"
+      />
+      <input
+        class="card-text"
+        placeholder="Meses (para o pagamento total)"
+        [(ngModel)]="meses"
+        type="number"
+      />
+      <input
+        class="card-text"
+        placeholder="Juros (ao mês)"
+        [(ngModel)]="juros"
+        type="number"
+      />
+      <hr />
+      <p class="card-text">{{ getAmortizacao() }}</p>
+      <hr />
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Mês</th>
+            <th scope="col">Parcela</th>
+            <th scope="col">Juros</th>
+            <th scope="col">Amortização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of resultados">
+            <td>{{ i.mes }}</td>
+            <td>{{ i.parcela }}</td>
+            <td>{{ i.amortizacao }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

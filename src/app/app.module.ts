@@ -13,6 +13,7 @@ import { AnaSimpleInterestsComponent } from './components/tarefa/ana-simple-inte
 import { AnaCompoundInterestsComponent } from './components/tarefa/ana-compound-interests/ana-compound-interests.component';
 import { AnaRandomNumbersComponent } from './components/tarefa/ana-random-numbers/ana-random-numbers.component';
 import { RevisaoComponent } from './components/tarefa/revisao/revisao.component';
+import { Revisao2Component } from './components/tarefa/revisao-2/revisao-2.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -28,6 +29,7 @@ import { RevisaoComponent } from './components/tarefa/revisao/revisao.component'
     AnaCompoundInterestsComponent,
     AnaRandomNumbersComponent,
     RevisaoComponent,
+    Revisao2Component,
   ],
   bootstrap: [AppComponent],
 })
